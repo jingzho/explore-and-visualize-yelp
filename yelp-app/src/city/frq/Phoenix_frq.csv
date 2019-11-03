@@ -1,0 +1,208 @@
+Cuisine,1,1.5,2,2.5,3,3.5,4,4.5,5
+Bars,2,9,44,140,291,429,430,170,46
+Sandwiches,8,22,65,112,214,269,312,165,39
+Fast Food,23,94,227,248,240,177,150,51,10
+American (Traditional),1,16,55,154,274,291,242,87,20
+Pizza,6,19,68,98,153,227,253,82,15
+Coffee & Tea,1,8,21,61,81,93,188,172,59
+Italian,2,6,30,41,85,166,188,65,6
+Burgers,13,56,103,104,119,140,141,43,10
+Breakfast & Brunch,0,4,22,66,112,179,262,131,29
+Mexican,5,13,47,116,187,238,250,132,23
+Chinese,1,4,27,58,95,109,86,18,2
+American (New),2,8,23,67,146,241,300,110,10
+Specialty Food,4,8,9,18,40,80,157,151,109
+Bakeries,2,2,11,27,54,70,97,104,59
+Cafes,0,2,5,11,34,71,102,81,30
+Desserts,2,2,4,11,30,72,124,126,61
+Ice Cream & Frozen Yogurt,1,5,14,26,60,77,125,99,41
+Japanese,1,0,3,13,40,70,79,20,5
+Chicken Wings,5,28,60,82,60,70,63,20,3
+Seafood,1,2,8,15,50,90,104,46,4
+Salad,0,2,14,26,50,102,142,75,13
+Sushi Bars,0,0,1,3,36,69,87,20,3
+Beer,0,1,6,17,30,89,101,88,27
+Delis,2,5,8,26,59,78,63,55,8
+Asian Fusion,0,0,2,14,38,53,70,18,3
+Mediterranean,0,1,2,4,23,53,101,65,11
+Barbeque,0,3,2,11,35,61,49,23,15
+Canadian (New),0,0,0,0,0,0,0,0,0
+Steakhouses,0,1,5,22,40,69,52,8,0
+Lounges,0,0,1,17,32,46,65,36,11
+Indian,1,0,1,3,15,31,29,7,0
+Thai,0,0,0,1,7,30,49,12,3
+Juice Bars & Smoothies,0,1,7,11,30,50,85,68,24
+Diners,0,0,8,21,29,42,36,14,0
+Wine Bars,0,0,1,2,17,50,84,54,15
+Middle Eastern,0,0,1,1,5,12,36,20,7
+Cocktail Bars,0,0,2,6,17,33,65,24,6
+Greek,0,0,2,6,19,30,60,35,3
+French,0,0,0,1,4,11,18,11,2
+Vietnamese,0,0,1,5,10,22,31,13,1
+Vegetarian,0,1,2,2,13,40,62,37,10
+Local Flavor,2,3,1,8,15,18,37,35,35
+Ethnic Food,0,0,1,2,6,20,30,30,6
+Buffets,1,4,15,32,45,49,26,8,0
+Korean,0,0,0,2,11,16,14,6,1
+Soup,0,1,5,12,23,32,38,13,7
+Food Trucks,0,1,3,6,10,14,35,54,41
+Gluten-Free,0,0,0,6,17,30,65,25,9
+Vegan,0,0,0,0,0,0,0,0,0
+Tex-Mex,1,4,18,22,41,45,15,2,0
+Comfort Food,0,0,2,2,8,15,24,4,4
+Donuts,1,4,14,10,18,11,31,33,9
+Hot Dogs,0,4,6,2,15,26,34,22,14
+Bagels,0,0,5,13,16,11,16,20,2
+Caribbean,0,0,0,1,3,8,12,7,4
+Gastropubs,0,0,1,0,3,16,32,9,0
+German,0,0,0,0,2,1,3,1,1
+Latin American,0,0,0,1,6,15,23,19,5
+Breweries,0,0,0,1,10,16,19,13,2
+Halal,0,0,0,0,2,6,13,8,1
+Southern,0,1,2,4,3,18,17,6,2
+Tapas/Small Plates,0,0,0,2,3,10,19,12,0
+Tea Rooms,0,0,0,1,2,2,9,13,4
+Pakistani,0,0,1,1,6,11,9,3,0
+Fruits & Veggies,0,1,0,0,3,10,14,10,11
+British,0,0,0,0,1,4,1,4,0
+Fish & Chips,0,0,5,2,2,10,6,7,0
+Noodles,0,0,0,3,7,6,18,10,2
+Tapas Bars,0,0,0,0,0,0,0,0,0
+Beer Bar,0,0,1,2,2,14,19,21,5
+Bubble Tea,1,0,2,0,2,12,15,17,3
+Cupcakes,0,0,2,3,10,12,14,20,23
+Food Stands,0,0,0,0,4,7,14,9,8
+Hawaiian,0,0,0,2,6,14,14,21,0
+Soul Food,0,0,0,2,4,9,10,7,1
+Dim Sum,0,0,0,1,3,5,3,1,0
+Cajun/Creole,0,0,2,7,5,7,9,5,2
+Portuguese,0,0,0,0,0,0,0,0,0
+Modern European,0,0,0,0,0,1,8,6,1
+Creperies,0,0,0,0,1,4,8,7,0
+Shaved Ice,0,1,0,0,2,3,20,35,15
+Swabian,0,0,0,0,0,0,0,0,0
+Spanish,0,0,0,2,1,4,4,3,2
+Filipino,0,0,0,0,4,2,5,0,0
+Cheesesteaks,0,1,1,5,10,16,10,5,0
+Irish,0,0,0,1,4,15,4,1,0
+Turkish,0,0,0,1,0,3,1,2,0
+Patisserie/Cake Shop,1,0,0,1,0,0,3,3,1
+Lebanese,0,0,1,0,0,3,0,6,2
+Cheese Shops,0,0,0,0,0,2,2,5,5
+Taiwanese,0,0,0,0,0,2,3,0,1
+Custom Cakes,1,1,2,1,6,8,8,11,12
+Gay Bars,0,1,0,3,9,8,9,3,1
+Ramen,0,0,0,0,1,5,13,0,0
+Delicatessen,0,0,0,0,0,0,0,0,0
+Persian/Iranian,0,0,1,1,1,0,6,1,2
+Bistros,0,0,0,0,0,0,2,1,0
+Tacos,0,0,0,1,4,10,17,22,2
+Brasseries,0,0,0,0,0,0,1,0,0
+Do-It-Yourself Food,0,0,0,0,4,6,12,8,7
+Food Court,0,1,1,2,2,2,4,0,0
+African,0,0,0,1,3,3,6,2,1
+Poutineries,0,0,0,0,1,0,2,0,0
+International,0,0,0,0,0,0,0,0,0
+Gelato,0,0,0,0,1,2,7,13,5
+Kosher,0,0,0,0,2,3,4,3,1
+Coffee Roasteries,0,0,0,0,1,0,6,10,3
+Falafel,0,0,0,0,0,1,5,5,0
+Poke,0,0,0,0,0,6,8,18,4
+Afghan,0,0,0,0,0,0,3,1,0
+Pan Asian,0,0,0,0,0,0,0,0,0
+Peruvian,0,0,0,0,1,4,2,2,0
+Waffles,0,0,0,0,3,6,7,1,2
+Hot Pot,0,0,0,0,2,1,4,0,0
+Szechuan,0,0,0,1,3,2,7,1,0
+Brazilian,0,0,0,1,0,2,2,3,0
+Cantonese,0,0,0,1,0,3,5,5,0
+Personal Chefs,1,0,0,1,0,1,1,3,14
+Ethiopian,0,0,0,0,1,2,2,2,0
+Pretzels,0,0,1,1,6,1,2,2,3
+Cuban,0,0,0,0,0,3,1,3,2
+Malaysian,0,0,0,0,0,0,1,0,0
+Live/Raw Food,0,0,0,0,0,4,2,3,1
+Salvadoran,0,0,0,0,0,2,4,1,0
+Moroccan,0,0,0,0,0,0,2,2,1
+Arabian,0,0,0,0,0,0,5,3,0
+Russian,0,0,0,0,1,0,3,1,0
+Macarons,0,0,0,0,0,0,1,7,0
+Acai Bowls,0,0,0,1,0,4,13,4,2
+Himalayan/Nepalese,0,0,0,0,0,0,0,0,0
+Popcorn Shops,0,0,0,0,0,1,1,2,2
+Belgian,0,0,0,0,0,1,1,0,0
+Argentine,0,0,1,0,1,0,2,0,0
+Cafeteria,0,0,0,0,0,0,0,0,0
+Mongolian,0,0,0,0,4,3,6,0,0
+Whiskey Bars,0,0,0,0,0,2,0,2,0
+Colombian,0,0,0,0,0,0,0,1,1
+Cambodian,0,0,0,0,0,0,0,2,0
+Beverage Store,0,0,0,0,0,0,3,2,2
+New Mexican Cuisine,0,0,0,0,1,5,8,2,0
+Hungarian,0,0,0,0,0,0,0,0,0
+Basque,0,0,0,1,0,0,1,1,0
+Sri Lankan,0,0,0,0,0,0,0,0,0
+Champagne Bars,0,0,0,2,3,0,0,1,0
+Hakka,0,0,0,0,0,0,0,0,0
+Venezuelan,0,0,0,0,0,0,0,0,0
+Teppanyaki,0,0,0,1,0,3,1,0,0
+Indonesian,0,0,0,0,0,0,0,0,0
+Puerto Rican,0,0,0,0,0,1,1,5,0
+Bangladeshi,0,0,0,0,0,0,0,0,0
+Singaporean,0,0,0,0,0,0,0,0,0
+Ukrainian,0,0,0,0,0,0,0,1,0
+Coffeeshops,0,0,0,0,0,0,0,0,0
+Muay Thai,0,0,0,0,0,0,0,1,6
+South African,0,0,0,0,0,0,0,0,0
+Dominican,0,0,0,0,0,1,0,1,3
+Serbo Croatian,0,0,0,0,0,0,0,0,0
+Scandinavian,0,0,0,0,0,0,1,1,0
+Laotian,0,0,0,0,0,0,3,0,0
+Curry Sausage,0,0,0,0,0,0,0,0,0
+Austrian,0,0,0,0,0,0,1,0,0
+Bavarian,0,0,0,0,0,0,0,0,0
+Egyptian,0,0,0,0,0,0,0,0,0
+Burmese,0,0,0,0,0,0,0,0,0
+Izakaya,0,0,0,0,0,0,0,1,0
+Haitian,0,0,0,0,0,0,1,0,0
+Australian,0,0,0,0,0,0,0,0,0
+Shanghainese,0,0,0,0,0,0,0,0,0
+Armenian,0,0,0,0,0,1,0,0,0
+Czech,0,0,0,0,0,0,1,0,0
+Syrian,0,0,0,0,0,0,0,0,0
+Trinidadian,0,0,0,0,0,0,0,1,0
+Tuscan,0,0,0,0,0,0,0,0,0
+Iberian,0,0,0,0,0,0,0,0,0
+Honduran,0,0,0,0,0,0,0,0,0
+Slovakian,0,0,0,0,0,0,0,0,0
+Swiss Food,0,0,0,0,0,0,0,0,0
+Uzbek,0,0,0,0,0,0,0,0,0
+Kombucha,0,0,0,0,0,0,0,1,0
+Themed Cafes,0,0,0,0,0,0,0,1,0
+Baden,0,0,0,0,0,0,0,0,0
+Eastern European,0,0,0,0,0,0,0,0,0
+Nicaraguan,0,0,0,0,0,0,0,0,0
+Pita,0,0,0,0,2,0,0,0,0
+Japanese Curry,0,0,0,0,0,0,0,0,0
+Mauritius,0,0,0,0,0,0,0,0,0
+Schnitzel,0,0,0,0,0,0,0,0,0
+Udon,0,0,0,0,0,0,0,0,0
+Traditional Norwegian,0,0,0,0,0,0,0,0,0
+Tonkatsu,0,0,0,0,0,0,0,0,0
+Senegalese,0,0,0,0,0,0,0,0,0
+Conveyor Belt Sushi,0,0,0,0,0,0,0,0,0
+Baguettes,0,0,0,0,0,0,0,0,0
+Parent Cafes,0,0,0,0,0,0,0,0,0
+Hong Kong Style Cafe,0,0,0,0,0,0,0,0,0
+Eastern German,0,0,0,0,0,0,0,0,0
+Sicilian,0,0,0,0,0,0,0,0,0
+Hainan,0,0,0,0,0,0,0,0,0
+Bulgarian,0,0,0,0,0,0,0,0,0
+Czech/Slovakian,0,0,0,0,0,0,0,0,0
+Guamanian,0,0,0,0,0,0,0,0,0
+Alsatian,0,0,0,0,0,0,0,0,0
+Friterie,0,0,0,0,0,0,0,0,0
+Georgian,0,0,0,0,0,0,0,0,0
+Churros,0,0,0,0,0,0,0,0,0
+Rotisserie Chicken,0,0,0,0,0,0,0,1,0
+Soba,0,0,0,0,0,0,0,0,0

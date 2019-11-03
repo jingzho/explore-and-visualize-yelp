@@ -1,0 +1,2205 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Yelp Data Visualization</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#story">City Stories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead" style="background-image: url('img/header-bg.jpg')">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Welcome To Our Project!</div>
+        <div class="intro-heading text-uppercase">Explore and visualize Yelp</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#story">Read the story</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">About</h2>
+          <h3 class="section-subheading text-muted">The trip of exploring and visualizing.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Our Idea</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">When you want to explore various kinds of cuisines in a city, you may have no idea where to start even using the Yelp app or Google map. So we wonder if we could explore the data, find the fun facts and demonstrate them in a well-organized way. </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Our Goal</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">The goal of our visualization is to help you explore the features of 100+ cuisines in seven cities through maps, bar chart, coxcomb and etc.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Data Source</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">The data for the project is from <a href="http://www.yelp.com/dataset">Yelp dataset</a> which encompasses 1.6M reviews, 61K businesses, 366K users and 500K tips.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Technical Tools</h4>
+                </div>
+                <div class="timeline-body">
+                    <p class="text-muted">
+                      <ul>
+                        <li><a href="http://d3js.org/">D3</a> Data Driven Documents</li>
+                        <li><a href="https://dc-js.github.io/dc.js/">DC.js</a> Charting library on D3</li>
+                        <li><a href="https://angular.io/">Angular</a> as framework</li>
+                        <li><a href="https://getbootstrap.com/">Bootstrap</a> library</li>
+                      </ul>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>Let's start
+                  <br>the Trip!</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light cta" id="story">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">City Stories</h2>
+          <h3 class="section-subheading text-muted">Learn about food stories of each city!</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <!-- city1 -->
+        <div class="col-md-4 col-sm-6 portfolio-item" >
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1" (click)="modal_lasvegas()">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/lasvegas.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4 class="text-center">Las Vegas</h4>
+            <p class="text-center text-muted">City never sleeps</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- city2 -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2" (click)="modal_madison()">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/madison.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4 class="text-center">Madison</h4>
+            <p class="text-muted text-center">City of bars</p>
+          </div>
+        </div>
+        <!-- city3 -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3" (click)="modal_phoenix()">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/phoenix.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4 class="text-center">Phoenix</h4>
+            <p class="text-muted text-center">Quality of life</p>
+          </div>
+        </div>
+        <!-- city4 -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4" (click)="modal_cleveland()">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/cleveland.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4 class="text-center">Cleveland</h4>
+            <p class="text-muted text-center">About speed</p>
+          </div>
+        </div>
+        <!-- city5 -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5" (click)="modal_charlotte()">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/charlotte.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4 class="text-center">Charlotte</h4>
+            <p class="text-muted text-center">Pleasure after work</p>
+          </div>
+        </div>
+        <!-- city6 -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6" (click)="modal_montreal()">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/montreal.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4 class="text-center">Montreal</h4>
+            <p class="text-muted text-center">French gentlemen</p>
+          </div>
+        </div>
+        <!-- city7 -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7" (click)="modal_toronto()">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/toronto.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4 class="text-center">Toronto</h4>
+            <p class="text-muted text-center">Strict and unsatisfied diners</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade bg-secondary" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-body no_margin">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Las Vegas</h2>
+                  <h4 class="section-subheading text-muted mb-3">a city never sleeps</h4>
+                  <div class = "container mt-2">
+                    <div class="row">
+                      <button type="button" class="btn btn-warning reset_zoom_button">Reset Map</button>
+                    </div>
+                    <div class = "row align-items-center">
+                      <svg class = "mx-auto col-lg-6" id = "map-lasvegas" width="100%" height="100%" viewBox="0,0,1000,1000"></svg> 
+                      <div class = "row col-lg-5 justify-content-center">
+                        <div class="row">
+                          <div class="card" width = "100%">
+                            <h5 class="card-header">Restaurant information</h5>
+                            <div class="card-body">
+                                <p class="card-text" id="vegas_restaurant_detail">Hover on restaurant on the map to view detail information.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                          <div class="card" width = "100%">
+                          <h5 class="card-header">Do you know restaurants in Las Vegas:</h5>
+                            <div class="card-body" width = "100%">
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item "><img id="icon" src="img/icon/diamond.gif" height="40" width="40">the highest average review counts per restaurant</li>
+                                <li class="list-group-item "><img id="icon" src="img/icon/daylight.gif" height="40" width="40">the longest open duration time in a day</li>
+                                <li class="list-group-item "><img id="icon" src="img/icon/lightbulb.gif" height="40" width="40">the highest 24-hour open rate</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p id="maptip">* zoom in or zoom out the map</p>
+                  <div class="container mt-5 rounded" style="background-color: #f9f9f9">
+                      <div class="row mt-2">
+                        <svg class = "col-lg-6 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "rate-lasvegas"></svg>  
+                        <svg class = "col-lg-6 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "hour24-lasvegas"></svg>
+                      </div>  
+                      <div class="row justify-content-center mb-5">
+                          <svg class = "col-lg-6 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "open-lasvegas"></svg>
+                      </div>                             
+                  </div>
+
+                  <!-- 1 Coxcomb Part -->
+                  <div class="container mt-5">
+                    <h4>Number of Restaurants on Different Rating and Cuisine</h4>
+                  </div>
+                  <p class="tip">* We use the Coxcomb to show the number of restaurant distribution of rating and various categories of restaurants. The darker green represents a higher rating comparing to a lighter one. You could not only see the distribution in only one category. Check several boxes from those three categories to see and compare the cuisine at the same time.</p>
+                  <p class="tip">* For example: If you want to see the star distribution of American food, sandwiches, fast food and bars at the same time, you could select American food from Regional Type, fast food and sandwiches from Food Type, bars from Restaurant Type. Then you could see the coxcomb graph of this city on your interest field.</p>
+                  <p class="tip">* We also set some default filters for you to start. Have fun!</p>
+                  <div class="row mt-3">
+
+                          
+                        <!-- Checkbox -->
+                      <div class="form-group col-lg-3 align-items-center checkbox_container">
+                        <nav class="nav flex-column mt-4">
+                          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                            <li class="nav-item">                            
+                              <button class="btn btn-dark default-reset col-lg-10">Reset</button>
+                            </li>
+                            <li class="nav-item mt-5">
+                            <button class="btn btn-warning default default-food col-lg-10">Compare Food</button>
+                            </li>
+                            <li class="nav-item mt-3">
+                            <button class="btn btn-warning default default-rest col-lg-10">Compare Restaurant</button>
+                            </li>
+                            <li class="nav-item mt-3">
+                            <button class="btn btn-warning default default-region col-lg-10">Compare Region</button>
+                            </li>
+                            <!-- Food Type Dropdown -->
+                            <li class="nav-item dropdown food-dropdown mt-5">
+                              <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Food Type</button>
+                              <div class="dropdown-menu">
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox1"
+                                      value="Sandwiches">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox1">Sandwiches</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox2"
+                                      value="Fast Food" checked>
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox2">Fast Food</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox3"
+                                      value="Pizza">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox3">Pizza</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox4"
+                                      value="Burgers">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox4">Burgers</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox5"
+                                      value="Desserts">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox5">Desserts</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox6"
+                                      value="Ice Cream">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox6">Ice Cream</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox7"
+                                      value="Seafood">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox7">Seafood</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox8"
+                                      value="Salad">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox8">Salad</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox9"
+                                      value="Chicken Wings">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox9">Chicken Wings</label>
+                                  </div>
+                                </div>
+                               </div>
+                            </li>
+
+                            <!-- Rest Type Dropdown -->
+                            <li class="nav-item dropdown rest-dropdown mt-3">
+                              <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Restaurant Type</button>
+                              <div class="dropdown-menu">
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox10"
+                                      value="Bars" checked>
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox10">Bars</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox11"
+                                      value="Brunch">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox11">Brunch</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox12"
+                                      value="Coffee & Tea">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox12">Coffee & Tea</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox13"
+                                      value="Specialty Food">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox13">Specialty
+                                      Food</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox14"
+                                      value="Bakeries">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox14">Bakeries</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox15"
+                                      value="Cafes">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox15">Cafes</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+
+                            <!-- Region Type Dropdown -->
+                            <li class="nav-item dropdown region-dropdown mt-3 mb-3">
+                              <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Regional Type</button>
+                              <div class="dropdown-menu">
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox16"
+                                      value="American" checked>
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox16">American</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox17"
+                                      value="Italian">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox17">Italian</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox18"
+                                      value="Mexican">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox18">Mexican</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox19"
+                                      value="Chinese">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox19">Chinese</label>
+                                  </div>
+                                </div>
+                                <div class="row ml-3">
+                                  <div class="form-check form-check-inline custom-checkbox">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="inlineCheckbox20"
+                                      value="Japanese">
+                                    <label class="form-check-label custom-control-label" for="inlineCheckbox20">Japanese</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </div>
+                        </nav>
+                      </div>
+
+                      <!-- Coxcomb -->
+                      <div class="container col-lg-9">
+                        <svg class="col-lg-10 justify-content-center coxcomb" id="lasvegas-coxcomb" viewBox="0,0,1000,1000"
+                          font-family="sans-serif" font-size="10"></svg>
+                      </div>
+                  </div>
+                  <br>
+                  <div class="container mb-2">
+                    <h4>Light Map on Opening Restaurants</h4>
+                  </div>
+                  <p class="tip">* The light map animation shows the opening restaurants at a given hour. Every dot represents a restaurant; therefore, you could get an overall view about the busy time of a city.</p>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0E1ntEDCbi0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>              
+                  <br>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fas fa-times"></i>
+                      Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 mx-auto">
+                  <div class="modal-body no_margin">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">Madison</h2>
+                    <h4 class="item-intro text-muted mb-3">City of bars</h4>
+                    <div class = "container mt-2">
+                      <div class = "row align-items-center">
+                        <svg class = "mx-auto col-lg-6" id = "map-madison" width="100%" height="100%" viewBox="0,0,1000,1000">
+                          <rect x = "0" y = "100" width = "1000" height = "800" fill = "none" stroke = "black" stroke-width = "2"></rect>
+                          <text id="sorry_text" x="500" y="500">Oops...this map is missing.</text>
+                        </svg> 
+                        <div class = "row col-lg-5 justify-content-center">
+                          <div class="row">
+                            <div class="card" width = "100%">
+                              <h5 class="card-header">Do you know Madison:</h5>
+                              <div class="card-body" width = "100%">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item"><img id="icon" src="img/icon/diamond.gif" height="40" width="40">Has the most bars of all sorts</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container mt-5 rounded" style="background-color: #f9f9f9">
+                        <div class="row mt-2">
+                          <svg class = "col-lg-10 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "bar-madison"></svg>  
+                        </div>                          
+                    </div>
+                    <!-- 2 Coxcomb Part -->
+                    <div class="container mt-5">
+                      <h4>Number of Restaurants on Different Rating and Cuisine</h4>
+                    </div>
+                    <p class="tip">* We use the Coxcomb to show the number of restaurant distribution of rating and various categories of restaurants. The darker green represents a higher rating comparing to a lighter one. You could not only see the distribution in only one category. Check several boxes from those three categories to see and compare the cuisine at the same time.</p>
+                    <p class="tip">* For example: If you want to see the star distribution of American food, sandwiches, fast food and bars at the same time, you could select American food from Regional Type, fast food and sandwiches from Food Type, bars from Restaurant Type. Then you could see the coxcomb graph of this city on your interest field.</p>
+                    <p class="tip">* We also set some default filters for you to start. Have fun!</p>
+                    <div class="row mt-3">
+
+                        
+                        <!-- Checkbox -->
+                        <div class="form-group col-lg-3 align-items-center checkbox_container">
+                            <nav class="nav flex-column m4-5">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        
+                                                            <li class="nav-item">
+                            <button class="btn btn-dark default-reset col-lg-10">Reset</button>
+                            </li>
+                              <li class="nav-item mt-5">
+                            <button class="btn btn-warning default default-food col-lg-10">Compare Food</button>
+                            </li>
+                            <li class="nav-item mt-3">
+                            <button class="btn btn-warning default default-rest col-lg-10">Compare Restaurant</button>
+                            </li>
+                            <li class="nav-item mt-3">
+                            <button class="btn btn-warning default default-region col-lg-10">Compare Region</button>
+                            </li>
+                              <!-- Food Type Dropdown -->
+                                <li class="nav-item dropdown food-dropdown mt-5">
+                                    <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Food Type</button>
+                                    <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox1"
+                                            value="Sandwiches">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox1">Sandwiches</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox2"
+                                            value="Fast Food" checked>
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox2">Fast Food</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox3"
+                                            value="Pizza">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox3">Pizza</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox4"
+                                            value="Burgers">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox4">Burgers</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox5"
+                                            value="Desserts">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox5">Desserts</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox6"
+                                            value="Ice Cream">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox6">Ice Cream</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox7"
+                                            value="Seafood">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox7">Seafood</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox8"
+                                            value="Salad">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox8">Salad</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox9"
+                                            value="Chicken Wings">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox9">Chicken Wings</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                        
+                                <!-- Rest Type Dropdown -->
+                                <li class="nav-item dropdown rest-dropdown mt-3">
+                                    <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Restaurant Type</button>
+                                    <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox10"
+                                            value="Bars" checked>
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox10">Bars</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox11"
+                                            value="Brunch">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox11">Brunch</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox12"
+                                            value="Coffee & Tea">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox12">Coffee & Tea</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox13"
+                                            value="Specialty Food">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox13">Specialty
+                                            Food</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox14"
+                                            value="Bakeries">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox14">Bakeries</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox15"
+                                            value="Cafes">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox15">Cafes</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                        
+                                <!-- Region Type Dropdown -->
+                                <li class="nav-item dropdown region-dropdown mt-3 mb-3">
+                                    <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Regional Type</button>
+                                    <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox16"
+                                            value="American" checked>
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox16">American</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox17"
+                                            value="Italian">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox17">Italian</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox18"
+                                            value="Mexican">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox18">Mexican</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox19"
+                                            value="Chinese">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox19">Chinese</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="madison-inlineCheckbox20"
+                                            value="Japanese">
+                                        <label class="form-check-label custom-control-label" for="madison-inlineCheckbox20">Japanese</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                            </div>
+                            </nav>
+                        </div>
+                        
+                        <!-- Coxcomb -->
+                        <div class="container col-lg-9">
+                            <svg class="col-lg-10 justify-content-center coxcomb" id="madison-coxcomb" viewBox="0,0,1000,1000"
+                            font-family="sans-serif" font-size="10"></svg>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="container mb-2">
+                      <h4>Light Map on Opening Restaurants</h4>
+                    </div>
+                    <p class="tip">* The light map animation shows the opening restaurants at a given hour. Every dot represents a restaurant; therefore, you could get an overall view about the busy time of a city.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SYbzc_sCEwE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fas fa-times"></i>
+                        Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 mx-auto">
+                  <div class="modal-body no_margin">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">Phoenix</h2>
+                    <h4 class="item-intro text-muted mb-3">Quality of life</h4>
+                    <div class = "container mt-2">
+                      <div class="row">
+                        <button type="button" class="btn btn-warning reset_zoom_button">Reset Map</button>
+                      </div>
+                      <div class = "row align-items-center">
+                        <svg class = "mx-auto col-lg-6" id = "map-phoenix" width="100%" height="100%" viewBox="0,0,1000,1000"></svg> 
+                        <div class = "row col-lg-5 justify-content-center">
+                          <div class="row">
+                            <div class="card mb-2" width = "100%">
+                              <h5 class="card-header">Restaurant information</h5>                            
+                              <div class="card-body" width = "100%">
+                                <p class="card-text" id="phoenix_restaurant_detail">Hover on restaurant on the map to view detail information.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="card" width = "100%">
+                            <h5 class="card-header">Do you know Phoenix:</h5>
+                              <div class="card-body" width = "100%">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item"><img id="icon" src="img/icon/star.png" height="28" width="28">Has the most popular 5-star restaurant</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p id="maptip">* zoom in or zoom out the map</p>
+                    <div class="container mt-5 rounded" style="background-color: #f9f9f9">
+                        <div class="row mt-2">
+                          <svg class = "col-lg-10 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "star5-phoenix"></svg>  
+                          <p class="tip ml-2">* This bar chart shows the 5-star restaurants with the highest comments on Yelp. Each bar in the chart represents a restaurant. For example, the first bar is a 5-star restaurant in Phoenix, receiving about 1400 reviews on Yelp.</p>
+                        </div>                          
+                    </div>
+                    <!-- 3 Coxcomb Part -->
+                    <div class="container mt-5">
+                      <h4>Number of Restaurants on Different Rating and Cuisine</h4>
+                    </div>
+                    <p class="tip">* We use the Coxcomb to show the number of restaurant distribution of rating and various categories of restaurants. The darker green represents a higher rating comparing to a lighter one. You could not only see the distribution in only one category. Check several boxes from those three categories to see and compare the cuisine at the same time.</p>
+                    <p class="tip">* For example: If you want to see the star distribution of American food, sandwiches, fast food and bars at the same time, you could select American food from Regional Type, fast food and sandwiches from Food Type, bars from Restaurant Type. Then you could see the coxcomb graph of this city on your interest field.</p>
+                    <p class="tip">* We also set some default filters for you to start. Have fun!</p>
+                    <div class="row mt-3">
+
+                        
+                        <!-- Checkbox -->
+                        <div class="form-group col-lg-3 align-items-center checkbox_container">
+                            <nav class="nav flex-column m4-5">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        
+                                                            <li class="nav-item">
+                            <button class="btn btn-dark default-reset col-lg-10">Reset</button>
+                            </li>
+                              <li class="nav-item mt-5">
+                            <button class="btn btn-warning default default-food col-lg-10">Compare Food</button>
+                            </li>
+                            <li class="nav-item mt-3">
+                            <button class="btn btn-warning default default-rest col-lg-10">Compare Restaurant</button>
+                            </li>
+                            <li class="nav-item mt-3">
+                            <button class="btn btn-warning default default-region col-lg-10">Compare Region</button>
+                            </li>
+                              <!-- Food Type Dropdown -->
+                                <li class="nav-item dropdown food-dropdown mt-5">
+                                    <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Food Type</button>
+                                    <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox1"
+                                            value="Sandwiches">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox1">Sandwiches</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox2"
+                                            value="Fast Food" checked>
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox2">Fast Food</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox3"
+                                            value="Pizza">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox3">Pizza</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox4"
+                                            value="Burgers">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox4">Burgers</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox5"
+                                            value="Desserts">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox5">Desserts</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox6"
+                                            value="Ice Cream">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox6">Ice Cream</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox7"
+                                            value="Seafood">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox7">Seafood</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox8"
+                                            value="Salad">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox8">Salad</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox9"
+                                            value="Chicken Wings">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox9">Chicken Wings</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                        
+                                <!-- Rest Type Dropdown -->
+                                <li class="nav-item dropdown rest-dropdown mt-3">
+                                    <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Restaurant Type</button>
+                                    <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox10"
+                                            value="Bars" checked>
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox10">Bars</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox11"
+                                            value="Brunch">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox11">Brunch</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox12"
+                                            value="Coffee & Tea">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox12">Coffee & Tea</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox13"
+                                            value="Specialty Food">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox13">Specialty
+                                            Food</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox14"
+                                            value="Bakeries">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox14">Bakeries</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox15"
+                                            value="Cafes">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox15">Cafes</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                        
+                                <!-- Region Type Dropdown -->
+                                <li class="nav-item dropdown region-dropdown mt-3 mb-3">
+                                    <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Regional Type</button>
+                                    <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox16"
+                                            value="American" checked>
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox16">American</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox17"
+                                            value="Italian">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox17">Italian</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox18"
+                                            value="Mexican">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox18">Mexican</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox19"
+                                            value="Chinese">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox19">Chinese</label>
+                                        </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                        <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="phoenix-inlineCheckbox20"
+                                            value="Japanese">
+                                        <label class="form-check-label custom-control-label" for="phoenix-inlineCheckbox20">Japanese</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                            </div>
+                            </nav>
+                        </div>
+                        
+                        <!-- Coxcomb -->
+                        <div class="container col-lg-9">
+                            <svg class="col-lg-10 justify-content-center coxcomb" id="phoenix-coxcomb" viewBox="0,0,1000,1000"
+                            font-family="sans-serif" font-size="10"></svg>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="container mb-2">
+                      <h4>Light Map on Opening Restaurants</h4>
+                    </div>
+                    <p class="tip">* The light map animation shows the opening restaurants at a given hour. Every dot represents a restaurant; therefore, you could get an overall view about the busy time of a city.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8SVj5H0PQ3g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fas fa-times"></i>
+                        Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 mx-auto">
+                  <div class="modal-body no_margin">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">Cleveland</h2>
+                    <h4 class="item-intro text-muted mb-3">About speed</h4>
+                    <div class = "container mt-2">
+                      <div class="row">
+                        <button type="button" class="btn btn-warning reset_zoom_button">Reset Map</button>
+                      </div>
+                      <div class = "row align-items-center">
+                        <svg class = "mx-auto col-lg-6" id = "map-cleveland" width="100%" height="100%" viewBox="0,0,1000,1000"></svg> 
+                        <div class = "row col-lg-5 justify-content-center">
+                          <div class="row">
+                            <div class="card mb-2" width = "100%">
+                              <h5 class="card-header">Restaurant information</h5>
+                              <div class="card-body" width = "100%">
+                                <p class="card-text" id="cleveland_restaurant_detail">Hover on restaurant on the map to view detail information.</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="card" width = "100%">
+                            <h5 class="card-header">Do you know people in Cleveland:</h5>
+                              <div class="card-body" width = "100%">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item"><img id="icon" src="img/icon/burger.png" height="30" width="30">Really love fast food<br>(burgers, pizzas, sandwiches)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p id="maptip">* zoom in or zoom out the map</p>
+                    <div class="container mt-5 rounded" style="background-color: #f9f9f9">
+                        <div class="row mt-2">
+                          <svg class = "col-lg-10 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "fastfood-cleveland"></svg>  
+                        </div>                           
+                    </div>
+                    <!-- 4 Coxcomb Part -->
+                    <div class="container mt-5">
+                      <h4>Number of Restaurants on Different Rating and Cuisine</h4>
+                    </div>
+                    <p class="tip">* We use the Coxcomb to show the number of restaurant distribution of rating and various categories of restaurants. The darker green represents a higher rating comparing to a lighter one. You could not only see the distribution in only one category. Check several boxes from those three categories to see and compare the cuisine at the same time.</p>
+                    <p class="tip">* For example: If you want to see the star distribution of American food, sandwiches, fast food and bars at the same time, you could select American food from Regional Type, fast food and sandwiches from Food Type, bars from Restaurant Type. Then you could see the coxcomb graph of this city on your interest field.</p>
+                    <p class="tip">* We also set some default filters for you to start. Have fun!</p>
+                    <div class="row mt-3">
+
+                        
+                        <!-- Checkbox -->
+                        <div class="form-group col-lg-3 align-items-center checkbox_container">
+                          <nav class="nav flex-column mt-4">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                                                            <li class="nav-item">
+                            <button class="btn btn-dark default-reset col-lg-10">Reset</button>
+                            </li>
+                              <li class="nav-item mt-5">
+                            <button class="btn btn-warning default default-food col-lg-10">Compare Food</button>
+                            </li>
+                            <li class="nav-item mt-3">
+                            <button class="btn btn-warning default default-rest col-lg-10">Compare Restaurant</button>
+                            </li>
+                            <li class="nav-item mt-3">
+                            <button class="btn btn-warning default default-region col-lg-10">Compare Region</button>
+                            </li>
+                              <!-- Food Type Dropdown -->
+                              <li class="nav-item dropdown food-dropdown mt-5">
+                                  <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Food Type</button>
+                                  <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox1"
+                                          value="Sandwiches">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox1">Sandwiches</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox2"
+                                          value="Fast Food" checked>
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox2">Fast Food</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox3"
+                                          value="Pizza">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox3">Pizza</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox4"
+                                          value="Burgers">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox4">Burgers</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox5"
+                                          value="Desserts">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox5">Desserts</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox6"
+                                          value="Ice Cream">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox6">Ice Cream</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox7"
+                                          value="Seafood">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox7">Seafood</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox8"
+                                          value="Salad">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox8">Salad</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox9"
+                                          value="Chicken Wings">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox9">Chicken Wings</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <!-- Rest Type Dropdown -->
+                                <li class="nav-item dropdown rest-dropdown mt-3">
+                                  <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Restaurant Type</button>
+                                  <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox10"
+                                          value="Bars" checked>
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox10">Bars</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox11"
+                                          value="Brunch">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox11">Brunch</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox12"
+                                          value="Coffee & Tea">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox12">Coffee & Tea</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox13"
+                                          value="Specialty Food">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox13">Specialty
+                                          Food</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox14"
+                                          value="Bakeries">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox14">Bakeries</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox15"
+                                          value="Cafes">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox15">Cafes</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <!-- Region Type Dropdown -->
+                                <li class="nav-item dropdown region-dropdown mt-3 mb-3">
+                                  <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Regional Type</button>
+                                  <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox16"
+                                          value="American" checked>
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox16">American</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox17"
+                                          value="Italian">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox17">Italian</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox18"
+                                          value="Mexican">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox18">Mexican</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox19"
+                                          value="Chinese">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox19">Chinese</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="cleveland-inlineCheckbox20"
+                                          value="Japanese">
+                                        <label class="form-check-label custom-control-label" for="cleveland-inlineCheckbox20">Japanese</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                            </div>
+                          </nav>
+                        </div>
+
+                        <!-- Coxcomb -->
+                        <div class="container col-lg-9">
+                          <svg class="col-lg-10 justify-content-center coxcomb" id="cleveland-coxcomb" viewBox="0,0,1000,1000"
+                            font-family="sans-serif" font-size="10"></svg>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="container mb-2">
+                      <h4>Light Map on Opening Restaurants</h4>
+                    </div>
+                    <p class="tip">* The light map animation shows the opening restaurants at a given hour. Every dot represents a restaurant; therefore, you could get an overall view about the busy time of a city.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ktjnvLX_jOs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fas fa-times"></i>
+                        Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 mx-auto">
+                  <div class="modal-body no_margin">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">Charlotte</h2>
+                    <h4 class="item-intro text-muted mb-3">Pleasure after work</h4>
+                    <div class = "container mt-2">
+                      <div class = "row align-items-center">
+                        <svg class = "mx-auto col-lg-6" id = "map-charlotte" width="100%" height="100%" viewBox="0,0,1000,1000">
+                          <rect x = "0" y = "100" width = "1000" height = "800" fill = "none" stroke = "black" stroke-width = "2"></rect>
+                          <text id="sorry_text" x="500" y="500">Oops...this map is missing.</text>
+                        </svg> 
+                        <div class = "row col-lg-6 justify-content-center">
+                          <div class="row">
+                            <div class="card border-light mb-3" width = "100%">
+                              <h5 class="card-header">Do you know in Charlotte:</h5>
+                              <div class="card-body" width = "100%">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item"><img id="icon" src="img/icon/dislike.png" height="30" width="30">People dislike cafe and tea</li>
+                                  <li class="list-group-item"><img id="icon" src="img/icon/daylight.gif" height="40" width="40">Restaurants has the latest closing time</li>
+                                  <li class="list-group-item"><img id="icon" src="img/icon/grill.gif" height="40" width="40">There are 8 Dominican restaurants</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container mt-5 rounded"  style="background-color: #f9f9f9">
+                        <div class="row mt-2">
+                          <svg class = "col-lg-6 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "ct-charlotte"></svg>  
+                          <svg class = "col-lg-6 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "late-charlotte"></svg>
+                        </div>  
+                        <div class="row justify-content-center">
+                            <svg class = "col-lg-6 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "min-charlotte"></svg>
+                        </div>                            
+                    </div>
+                    <!-- 5 Coxcomb Part -->
+                    <div class="container mt-5">
+                      <h4>Number of Restaurants on Different Rating and Cuisine</h4>
+                    </div>
+                    <p class="tip">* We use the Coxcomb to show the number of restaurant distribution of rating and various categories of restaurants. The darker green represents a higher rating comparing to a lighter one. You could not only see the distribution in only one category. Check several boxes from those three categories to see and compare the cuisine at the same time.</p>
+                    <p class="tip">* For example: If you want to see the star distribution of American food, sandwiches, fast food and bars at the same time, you could select American food from Regional Type, fast food and sandwiches from Food Type, bars from Restaurant Type. Then you could see the coxcomb graph of this city on your interest field.</p>
+                    <p class="tip">* We also set some default filters for you to start. Have fun!</p>
+                    <div class="row mt-3">
+
+                        
+                        <!-- Checkbox -->
+                        <div class="form-group col-lg-3 align-items-center checkbox_container">
+                          <nav class="nav flex-column mt-4">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                                                            <li class="nav-item">
+                            <button class="btn btn-dark default-reset col-lg-10">Reset</button>
+                            </li>
+                              <li class="nav-item mt-5">
+                            <button class="btn btn-warning default default-food col-lg-10">Compare Food</button>
+                            </li>
+                            <li class="nav-item mt-3">
+                            <button class="btn btn-warning default default-rest col-lg-10">Compare Restaurant</button>
+                            </li>
+                            <li class="nav-item mt-3">
+                            <button class="btn btn-warning default default-region col-lg-10">Compare Region</button>
+                            </li>
+                              <!-- Food Type Dropdown -->
+                              <li class="nav-item dropdown food-dropdown mt-5">
+                                  <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Food Type</button>
+                                  <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox1"
+                                          value="Sandwiches">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox1">Sandwiches</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox2"
+                                          value="Fast Food" checked>
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox2">Fast Food</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox3"
+                                          value="Pizza">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox3">Pizza</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox4"
+                                          value="Burgers">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox4">Burgers</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox5"
+                                          value="Desserts">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox5">Desserts</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox6"
+                                          value="Ice Cream">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox6">Ice Cream</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox7"
+                                          value="Seafood">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox7">Seafood</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox8"
+                                          value="Salad">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox8">Salad</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox9"
+                                          value="Chicken Wings">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox9">Chicken Wings</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <!-- Rest Type Dropdown -->
+                                <li class="nav-item dropdown rest-dropdown mt-3">
+                                  <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Restaurant Type</button>
+                                  <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox10"
+                                          value="Bars" checked>
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox10">Bars</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox11"
+                                          value="Brunch">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox11">Brunch</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox12"
+                                          value="Coffee & Tea">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox12">Coffee & Tea</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox13"
+                                          value="Specialty Food">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox13">Specialty
+                                          Food</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox14"
+                                          value="Bakeries">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox14">Bakeries</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox15"
+                                          value="Cafes">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox15">Cafes</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <!-- Region Type Dropdown -->
+                                <li class="nav-item dropdown region-dropdown mt-3 mb-3">
+                                  <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Regional Type</button>
+                                  <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox16"
+                                          value="American" checked>
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox16">American</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox17"
+                                          value="Italian">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox17">Italian</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox18"
+                                          value="Mexican">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox18">Mexican</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox19"
+                                          value="Chinese">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox19">Chinese</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="charlotte-inlineCheckbox20"
+                                          value="Japanese">
+                                        <label class="form-check-label custom-control-label" for="charlotte-inlineCheckbox20">Japanese</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                            </div>
+                          </nav>
+                        </div>
+
+                        <!-- Coxcomb -->
+                        <div class="container col-lg-9">
+                          <svg class="col-lg-10 justify-content-center coxcomb" id="charlotte-coxcomb" viewBox="0,0,1000,1000"
+                            font-family="sans-serif" font-size="10"></svg>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="container mb-2">
+                      <h4>Light Map on Opening Restaurants</h4>
+                    </div>
+                    <p class="tip">* The light map animation shows the opening restaurants at a given hour. Every dot represents a restaurant; therefore, you could get an overall view about the busy time of a city.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BozZQGwhWKc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fas fa-times"></i>
+                        Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 mx-auto">
+                  <div class="modal-body no_margin">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">Montreal</h2>
+                    <h4 class="item-intro text-muted mb-3">French gentlemen</h4>
+                    <div class = "container mt-2">
+                      <div class="row">
+                        <button type="button" class="btn btn-warning reset_zoom_button">Reset Map</button>
+                      </div>
+                      <div class = "row align-items-center">
+                        <svg class = "mx-auto col-lg-6" id = "map-montreal" width="100%" height="100%" viewBox="0,0,1000,1000"></svg> 
+                        <div class = "row col-lg-5 justify-content-center">
+                          <div class="row mb-2">
+                            <div class="card" width = "100%">
+                              <h5 class="card-header">Restaurant information</h5>
+                              <div class="card-body" width = "100%">
+                                <p class="card-text" id="montreal_restaurant_detail">Hover on restaurant on the map to view detail information.</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                              </div>
+                            </div>
+                          </div>
+                          <br>
+                          <div class="row">
+                            <div class="card" width = "100%">
+                              <h5 class="card-header">Do you know Montreal:</h5>
+                              <div class="card-body" width = "100%">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item"><img id="icon" src="img/icon/dislike.png" height="30" width="30">People dislikes fast food the most</li>
+                                  <li class="list-group-item"><img id="icon" src="img/icon/checkmark.gif" height="40" width="40">People are crazy about French cuisine</li>
+                                  <li class="list-group-item"><img id="icon" src="img/icon/search.gif" height="40" width="40">Has the most European restaurants</li>
+                                  <li class="list-group-item"><img id="icon" src="img/icon/daylight.gif" height="40" width="40">Has the shortest open duration</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p id="maptip">* zoom in or zoom out the map</p>
+                    <div class="container mt-5 rounded"  style="background-color: #f9f9f9">
+                        <div class="row mt-2">
+                          <svg class = "col-lg-6 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "p1-montreal"></svg>  
+                          <svg class = "col-lg-6 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "p2-montreal"></svg>
+                        </div>  
+                        <div class="row mt-2">
+                          <svg class = "col-lg-6 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "p3-montreal"></svg>
+                          <svg class = "col-lg-6 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "p4-montreal"></svg>
+                        </div>                            
+                    </div>
+                    <!-- 6 Coxcomb Part -->
+                    <div class="container mt-5">
+                      <h4>Number of Restaurants on Different Rating and Cuisine</h4>
+                    </div>
+                    <p class="tip">* We use the Coxcomb to show the number of restaurant distribution of rating and various categories of restaurants. The darker green represents a higher rating comparing to a lighter one. You could not only see the distribution in only one category. Check several boxes from those three categories to see and compare the cuisine at the same time.</p>
+                    <p class="tip">* For example: If you want to see the star distribution of American food, sandwiches, fast food and bars at the same time, you could select American food from Regional Type, fast food and sandwiches from Food Type, bars from Restaurant Type. Then you could see the coxcomb graph of this city on your interest field.</p>
+                    <p class="tip">* We also set some default filters for you to start. Have fun!</p>
+                    <div class="row mt-3">
+
+                        
+                        <!-- Checkbox -->
+                        <div class="form-group col-lg-3 align-items-center checkbox_container">
+                          <nav class="nav flex-column mt-4">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                                                            <li class="nav-item">
+                            <button class="btn btn-dark default-reset col-lg-10">Reset</button>
+                            </li>
+                              <li class="nav-item mt-5">
+                            <button class="btn btn-warning default default-food col-lg-10">Compare Food</button>
+                            </li>
+                            <li class="nav-item mt-3">
+                            <button class="btn btn-warning default default-rest col-lg-10">Compare Restaurant</button>
+                            </li>
+                            <li class="nav-item mt-3">
+                            <button class="btn btn-warning default default-region col-lg-10">Compare Region</button>
+                            </li>
+                              <!-- Food Type Dropdown -->
+                              <li class="nav-item dropdown food-dropdown mt-5">
+                                  <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Food Type</button>
+                                  <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox1"
+                                          value="Sandwiches">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox1">Sandwiches</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox2"
+                                          value="Fast Food" checked>
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox2">Fast Food</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox3"
+                                          value="Pizza">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox3">Pizza</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox4"
+                                          value="Burgers">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox4">Burgers</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox5"
+                                          value="Desserts">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox5">Desserts</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox6"
+                                          value="Ice Cream">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox6">Ice Cream</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox7"
+                                          value="Seafood">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox7">Seafood</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox8"
+                                          value="Salad">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox8">Salad</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox9"
+                                          value="Chicken Wings">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox9">Chicken Wings</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <!-- Rest Type Dropdown -->
+                                <li class="nav-item dropdown rest-dropdown mt-3">
+                                  <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Restaurant Type</button>
+                                  <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox10"
+                                          value="Bars" checked>
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox10">Bars</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox11"
+                                          value="Brunch">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox11">Brunch</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox12"
+                                          value="Coffee & Tea">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox12">Coffee & Tea</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox13"
+                                          value="Specialty Food">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox13">Specialty
+                                          Food</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox14"
+                                          value="Bakeries">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox14">Bakeries</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox15"
+                                          value="Cafes">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox15">Cafes</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <!-- Region Type Dropdown -->
+                                <li class="nav-item dropdown region-dropdown mt-3 mb-3">
+                                  <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Regional Type</button>
+                                  <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox16"
+                                          value="American" checked>
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox16">American</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox17"
+                                          value="Italian">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox17">Italian</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox18"
+                                          value="Mexican">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox18">Mexican</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox19"
+                                          value="Chinese">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox19">Chinese</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="montreal-inlineCheckbox20"
+                                          value="Japanese">
+                                        <label class="form-check-label custom-control-label" for="montreal-inlineCheckbox20">Japanese</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                            </div>
+                          </nav>
+                        </div>
+
+                        <!-- Coxcomb -->
+                        <div class="container col-lg-9">
+                          <svg class="col-lg-10 justify-content-center coxcomb" id="montreal-coxcomb" viewBox="0,0,1000,1000"
+                            font-family="sans-serif" font-size="10"></svg>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="container mb-2">
+                      <h4>Light Map on Opening Restaurants</h4>
+                    </div>
+                    <p class="tip">* The light map animation shows the opening restaurants at a given hour. Every dot represents a restaurant; therefore, you could get an overall view about the busy time of a city.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qnK__7dGE_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fas fa-times"></i>
+                        Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal 7 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 mx-auto">
+                  <div class="modal-body no_margin">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">Toronto</h2>
+                    <h4 class="item-intro text-muted mb-3">Strict and unsatisfied gourmet</h4>
+                    <div class = "container mt-2">
+                      <div class="row">
+                        <button type="button" class="btn btn-warning reset_zoom_button">Reset Map</button>
+                      </div>
+                      <div class = "row align-items-center">
+                        <svg class = "mx-auto col-lg-6" id = "map-toronto" width="100%" height="100%" viewBox="0,0,1000,1000"></svg> 
+                        <div class = "row col-lg-5 justify-content-center">
+                          <div class="row mb-2">
+                            <div class="card" width = "100%">
+                              <h5 class="card-header">Restaurant information</h5>
+                              <div class="card-body" width = "100%">
+                                <p class="card-text" id="toronto_restaurant_detail">Hover on restaurant on the map to view detail information.</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                              </div>
+                            </div>
+                          </div>
+                          <br>
+                          <div class="row">
+                            <div class="card" width = "100%">
+                              <h5 class="card-header">Do you know restaurants in Toronto:</h5>
+                              <div class="card-body" width = "100%">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item "><img id="icon" src="img/icon/diamond.gif" height="40" width="40">Has the lowest 5-star rate</li>
+                                  <li class="list-group-item "><img id="icon" src="img/icon/search.gif" height="40" width="40">Has the most restaurant types</li>
+                                  <li class="list-group-item "><img id="icon" src="img/icon/grill.gif" height="40" width="40">Has the most Asian food</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p id="maptip">* zoom in or zoom out the map</p>
+                    <div class="container mt-5 rounded"  style="background-color: #f9f9f9">
+                        <div class="row mt-2">
+                          <svg class = "col-lg-6 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "p1-toronto"></svg>  
+                          <svg class = "col-lg-6 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "p2-toronto"></svg>
+                        </div>  
+                        <div class="row justify-content-center">
+                            <svg class = "col-lg-6 mx-auto bar-chart" height="100%" width="100%" viewBox="0,0,1000,600" id = "p3-toronto"></svg>
+                        </div>                            
+                    </div>
+                    <!-- 7 Coxcomb Part -->
+                    <div class="container mt-5">
+                      <h4>Number of Restaurants on Different Rating and Cuisine</h4>
+                    </div>
+                    <p class="tip">* We use the Coxcomb to show the number of restaurant distribution of rating and various categories of restaurants. The darker green represents a higher rating comparing to a lighter one. You could not only see the distribution in only one category. Check several boxes from those three categories to see and compare the cuisine at the same time.</p>
+                    <p class="tip">* For example: If you want to see the star distribution of American food, sandwiches, fast food and bars at the same time, you could select American food from Regional Type, fast food and sandwiches from Food Type, bars from Restaurant Type. Then you could see the coxcomb graph of this city on your interest field.</p>
+                    <p class="tip">* We also set some default filters for you to start. Have fun!</p>
+                    <div class="row mt-3">
+
+                        
+                        <!-- Checkbox -->
+                        <div class="form-group col-lg-3 align-items-center checkbox_container">
+                          <nav class="nav flex-column mt-4">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                                                            <li class="nav-item">
+                            <button class="btn btn-dark default-reset col-lg-10">Reset</button>
+                            </li>
+                              <li class="nav-item mt-5">
+                            <button class="btn btn-warning default default-food col-lg-10">Compare Food</button>
+                            </li>
+                            <li class="nav-item mt-3">
+                            <button class="btn btn-warning default default-rest col-lg-10">Compare Restaurant</button>
+                            </li>
+                            <li class="nav-item mt-3">
+                            <button class="btn btn-warning default default-region col-lg-10">Compare Region</button>
+                            </li>
+                              <!-- Food Type Dropdown -->
+                              <li class="nav-item dropdown food-dropdown mt-5">
+                                  <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Food Type</button>
+                                  <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox1"
+                                          value="Sandwiches">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox1">Sandwiches</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox2"
+                                          value="Fast Food" checked>
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox2">Fast Food</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox3"
+                                          value="Pizza">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox3">Pizza</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox4"
+                                          value="Burgers">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox4">Burgers</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox5"
+                                          value="Desserts">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox5">Desserts</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox6"
+                                          value="Ice Cream">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox6">Ice Cream</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox7"
+                                          value="Seafood">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox7">Seafood</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox8"
+                                          value="Salad">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox8">Salad</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox9"
+                                          value="Chicken Wings">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox9">Chicken Wings</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <!-- Rest Type Dropdown -->
+                                <li class="nav-item dropdown rest-dropdown mt-3">
+                                  <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Restaurant Type</button>
+                                  <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox10"
+                                          value="Bars" checked>
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox10">Bars</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox11"
+                                          value="Brunch">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox11">Brunch</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox12"
+                                          value="Coffee & Tea">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox12">Coffee & Tea</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox13"
+                                          value="Specialty Food">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox13">Specialty
+                                          Food</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox14"
+                                          value="Bakeries">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox14">Bakeries</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox15"
+                                          value="Cafes">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox15">Cafes</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <!-- Region Type Dropdown -->
+                                <li class="nav-item dropdown region-dropdown mt-3 mb-3">
+                                  <button class="btn btn-success dropdown-toggle col-lg-10" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Regional Type</button>
+                                  <div class="dropdown-menu">
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox16"
+                                          value="American" checked>
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox16">American</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox17"
+                                          value="Italian">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox17">Italian</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox18"
+                                          value="Mexican">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox18">Mexican</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox19"
+                                          value="Chinese">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox19">Chinese</label>
+                                      </div>
+                                    </div>
+                                    <div class="row ml-3">
+                                      <div class="form-check form-check-inline custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox" id="toronto-inlineCheckbox20"
+                                          value="Japanese">
+                                        <label class="form-check-label custom-control-label" for="toronto-inlineCheckbox20">Japanese</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                            </div>
+                          </nav>
+                        </div>
+
+                        <!-- Coxcomb -->
+                        <div class="container col-lg-9">
+                          <svg class="col-lg-10 justify-content-center coxcomb" id="toronto-coxcomb" viewBox="0,0,1000,1000"
+                            font-family="sans-serif" font-size="10">
+                          </svg>
+                        </div>
+                    </div>
+                    <br>   
+                    <div class="container mb-2">
+                      <h4>Light Map on Opening Restaurants</h4>
+                    </div>
+                    <p class="tip">* The light map animation shows the opening restaurants at a given hour. Every dot represents a restaurant; therefore, you could get an overall view about the busy time of a city.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oDhHyX3dGc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fas fa-times"></i>
+                        Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Team</h2>
+                    <h3 class="section-subheading text-muted">Click to see roles and responsibilities on <a href="https://docs.google.com/spreadsheets/d/1DUwNaglFqDCDKd94bGIr0hN1UV112-JFc-nBn6Pl7D0/edit#gid=0">Google sheet</a></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/jing.jpg" class="img-responsive rounded-circle" alt="">
+                        <h4>Jing Zhou</h4>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/ouyang.jpg" class="img-responsive rounded-circle" alt="">
+                        <h4>Jing Ouyang</h4>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/tong.jpg" class="img-responsive rounded-circle" alt="">
+                        <h4>Tong Wu</h4>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-0">
+                    <span class="copyright">This website was created as a project for the INF554 Data Visualization class at <a href="https://viterbischool.usc.edu/">USC Viterbi School of Engineering</a>. <br></span>
+                </div>
+                <div class="col-md-offset-0">
+                    <span class="copyright">Website Template <a href="http://startbootstrap.com/template-overviews/agency/">Agency</a> by <a href="http://startbootstrap.com/">Start Bootstrap</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+  
